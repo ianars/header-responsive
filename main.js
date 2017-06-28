@@ -6,11 +6,12 @@ var btnNavShow = document.getElementById("btn-navShow");
 bigMac.addEventListener("click", mobile);
 function mobile() {
   btnNavShow.classList.toggle("listShow");
+
   bigMac.classList.toggle("open");
 }
 
 var header = document.querySelector(".header");
-var navMenu = document.querySelectorAll(".nav-mobile li a");
+var navMenu = document.querySelectorAll(".nav-mobile a");
 for (var i = 0; i < navMenu.length; i++) {
   navMenu[i].addEventListener("click", mobile);
 }
